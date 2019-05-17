@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.gallery-container {
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+.panel {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .5) inset;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: flex-grow 200ms ease-in-out;
+    will-change: flex-grow;
+}
+
+
+.panel h2 {
+    font-size: 4rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.panel.open {
+    flex-grow: 2;
+}
+
+.panel1 { background-image: url(images/japan.jpg); }
+
+.panel2 { background-image: url(images/eyes.jpg); }
+
+.panel3 { background-image: url(images/fox.jpg); }

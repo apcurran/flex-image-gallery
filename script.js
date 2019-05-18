@@ -5,6 +5,5 @@ const mainProgram = (() => {
     function animateOpen(event) {
        const panel = event.target;
        panel.classList.toggle("open");
-       console.log("Panel opened! IIFE worked!")
     }
   })();
